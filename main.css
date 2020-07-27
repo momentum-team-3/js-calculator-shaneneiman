@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    padding: 0;
-    border: 0;
+    border: 0; 
+    margin: 0;
     font-family: arial;
 }
 
@@ -13,7 +13,7 @@ img {
 header {
     background-size: cover;
     background-color: rgb(23, 85, 41);
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -24,19 +24,77 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: stretch;
 
 }
 
-.calculator-box {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-}
-
-.calculator-header {
-    background-color: rgb(23, 85, 41);
-    color: rgb(255,255,255);
+#calculator-box {
+    width: 366px;
+    height: 442px;
     padding: 10px;
+}
+
+/* .clear {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 25%;
+    background-color: rgb(70, 211, 70);
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    font-size: 1.8rem;
+    border: 0.5px solid rgb(255, 255, 255);
+} */
+
+.display {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    background-color: rgb(70, 211, 70);
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    font-size: 1.8rem;
+    border: 0.5px solid rgb(255, 255, 255);
+}
+
+.operator, .equal, .clear {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 25%;
+    background-color: rgb(23, 85, 41);
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    font-size: 1.8rem;
+    border: 0.5px solid rgb(255, 255, 255);
+}
+
+.content {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 25%;
+    background-color: rgb(30, 146, 30);
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    font-size: 1.8rem;
+    border: 0.5px solid rgb(255, 255, 255);
+} 
+
+.clear:hover, .operator:hover, .equal:hover, .content:hover {
+    font-weight: bold;
+}
+
+.clear:active, .operator:active, .equal:active, .content:active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(70, 211, 70)
 }
